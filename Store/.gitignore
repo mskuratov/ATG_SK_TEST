@@ -1,2 +1,6 @@
 config.jar
 classes.jar
+
+.idea
+*.iml
+target
