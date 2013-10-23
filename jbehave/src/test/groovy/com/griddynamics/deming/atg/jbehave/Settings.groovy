@@ -1,21 +1,19 @@
-package com.griddynamics.deming.atg.jbehave;
+package com.griddynamics.deming.atg.jbehave
 
-import org.apache.commons.lang.Validate;
+import org.apache.commons.lang.Validate
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Properties;
+class Settings {
 
-public class Settings {
+    // property keys
+    private static final def CRS_URL = "crs.url"
 
-    private static final String CRS_URL = "crs.url";
-
-    public static final String crsUrl;
+    // settings
+    static final def crsUrl
 
     static {
-        Properties properties = new Properties();
+        def properties = new Properties();
 
-        InputStream inputStream = Settings.class.getClassLoader().getResourceAsStream("jbehave.properties");
+        def inputStream = Settings.class.classLoader.getResourceAsStream("jbehave.properties");
         Validate.notNull(inputStream, "jbehave.properties file is not found in classpath.");
 
         try {
@@ -31,8 +29,8 @@ public class Settings {
         crsUrl = getString(properties, CRS_URL);
     }
 
-    private static String getString(Properties properties, String property) {
-        String value = properties.getProperty(property);
+    private static def getString(Properties properties, String property) {
+        def value = properties.getProperty(property);
 
         if (value == null) {
             throw new IllegalStateException(String.format("Property %s is not found", property));
