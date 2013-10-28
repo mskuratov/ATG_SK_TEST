@@ -19,6 +19,7 @@ class AboutPage extends WebDriverPage {
     }
 
     def findLink(String linkText) {
-        return findElement(By.linkText(linkText)).getAttribute("href")
+        def link = findElement(By.linkText(linkText))
+        return link != null ? link.getAttribute("href") : null
     }
 }

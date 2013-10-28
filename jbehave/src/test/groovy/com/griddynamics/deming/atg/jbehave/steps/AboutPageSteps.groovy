@@ -28,6 +28,8 @@ class AboutPageSteps {
     def thenNavigationPanelContainsLinkWithTitle(String title, String expectedLink) {
         def actualLink = pages.aboutPage().findLink(title)
 
+        assert actualLink != null
+
         if (actualLink.contains(";jsessionid")) {
             actualLink = actualLink.substring(0, actualLink.indexOf(";jsessionid"));
         }
