@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-ATG-Product: griddynamics.customPricing module
-ATG-Version: 10.1.2
-ATG-Class-Path: /home/kblyumkin/projects/internship/atg_project/build/jar/classes.jar
-ATG-Config-Path: /home/kblyumkin/projects/internship/atg_project/build/jar/config.jar
-ATG-Required: Store.EStore
-
-
