@@ -1,8 +1,15 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
 ATG-Product: griddynamicscustomPricing module
 ATG-Version: 10.1.2
 ATG-Class-Path: classes.jar
 ATG-Config-Path: config.jar
+=======
+ATG-Product: griddynamics.customPricing module
+ATG-Version: 10.1.2
+ATG-Class-Path: /classes.jar
+ATG-Config-Path: /config.jar
+>>>>>>> d25be1c58177615d9e2ae5121f0c195f76eb2dcf
 ATG-Required: Store.EStore
 
 
