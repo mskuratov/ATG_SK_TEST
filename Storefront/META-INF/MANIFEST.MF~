@@ -2,7 +2,15 @@ ATG-Product: Storefront Fashion Commerce
 Manifest-Version: 1.0
 ATG-Client-Class-Path: lib/classes.jar
 ATG-Class-Path: lib/classes.jar
+<<<<<<< HEAD
 ATG-Required: Store.Endeca.Assembler DCS.AbandonedOrderServices Store.EStore Store.griddynamics.customPricing
+=======
+<<<<<<< HEAD
+ATG-Required: Store.Endeca.Assembler DCS.AbandonedOrderServices Store.EStore Store.griddynamics.customPricing
+=======
+ATG-Required: Store.Endeca.Assembler DCS.AbandonedOrderServices Store.EStore griddynamics.customPricing
+>>>>>>> d25be1c58177615d9e2ae5121f0c195f76eb2dcf
+>>>>>>> 0697a3ba74ea87bd3e3e122dccf1c399ec7b4ba2
 ATG-Web-Module: j2ee-apps/Storefront/store.war j2ee-apps/Storefront/storedocroot.war
 
 Name: lib/classes.jar
